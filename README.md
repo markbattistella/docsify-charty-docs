@@ -48,6 +48,8 @@ npm i @markbattistellaify-charty
 
 ### Global settings
 
+> Example: [index.html](https://github.com/markbattistella/docsify-charty-docs/blob/38573bff480009d5bbe7cdbbab12fe0474fa7407/index.html#L37-L40)
+
 | Name    | Accepts   | Description                                        |
 |---------|-----------|----------------------------------------------------|
 | `theme` | `String`  | Set a global theme for chart colours - must be HEX |
