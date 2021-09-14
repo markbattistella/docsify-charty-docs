@@ -159,7 +159,7 @@ npm i @markbattistellaify-charty
 
 1. Clone the repo:
 
-    `git clone https://github.com/markbattistellaify-charty.git`
+    `git clone https://github.com/markbattistella/docsify-charty.git`
 
 1. Create your feature branch:
 
