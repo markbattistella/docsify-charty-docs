@@ -10,38 +10,38 @@
     ```html
     <script src="//unpkg.com/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.js"></script>
     <link rel="stylesheet" href="//unpkg.com/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">
-	```
+    ```
 
-	**jsDelivr.com**
-	```html
+    **jsDelivr.com**
+    ```html
     <script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">
-	```
+    ```
 
     **locally**
-	```html
+    ```html
     <script src="docsify-charty.min.js"></script>
     <link rel="stylesheet" href="docsify-charty.min.css">
     ```
 
 1. In docsify setup configure the plugin (see [configuration](#configuration) for setup). These are the global settings and affect all charts:
 
-    ```js
-    window.$docsify = {
-      charty: {
-        "theme": String,
-        "mode":  String,
-		"debug": Boolean
-      }
-    };
-    ```
+ ```js
+ window.$docsify = {
+   charty: {
+     "theme": String,
+     "mode":  String,
+     "debug": Boolean
+   }
+ };
+ ```
 
 ### npm install
 
 Or if you're using `npm` to manage your dependencies:
 
 ```sh
-npm i @markbattistellaify-charty
+npm i @markbattistella/docsify-charty
 ```
 
 ## Configuration
@@ -50,11 +50,11 @@ npm i @markbattistellaify-charty
 
 > Example: [index.html](https://github.com/markbattistella/docsify-charty-docs/blob/38573bff480009d5bbe7cdbbab12fe0474fa7407/index.html#L37-L40)
 
-| Name    | Accepts   | Description                                        |
-|---------|-----------|----------------------------------------------------|
-| `theme` | `String`  | Set a global theme for chart colours - must be HEX |
-| `mode`  | `String`  | Dark or light theme - to compliment your design    |
-| `debug` | `Boolean` | Shop warning or error messages in the console      |
+| Name    | Type      | Example   |  Description                              |
+|---------|-----------|-----------|-------------------------------------------|
+| `theme` | `String`  | "#EE5599" | Global theme for chart colours in HEX     |
+| `mode`  | `String`  | "light"   | Accepts "dark" or "light"                 |
+| `debug` | `Boolean` | false     | Console logs if charts aren't loading     |
 
 ### Per chart settings
 
@@ -62,7 +62,7 @@ npm i @markbattistellaify-charty
 |-------------------|---------------|------------------------------------------|
 | `title`           | `String`      | The title of the chart, displayed at the top. Leave blank if you want to hide it |
 | `caption`         | `String`      | The sub-text of the chart, displayed under the title. Leave blank to hide it |
-| `type`            | `String`      | The type of charty you want to display   |
+| `type`            | `String`      | The type of chart you want to display    |
 | `options.theme`   | `String`      | Set an individual theme to this chart. It will override the global theme |
 | `options.legend`  | `Boolean`     | Show the legend. Default `true`          |
 | `options.labels`  | `Boolean`     | Show the chart labels. Default `true`    |
@@ -73,25 +73,28 @@ npm i @markbattistellaify-charty
 
 ### Markdown code
 
-```json
+```js
+```charty
 {
   "title":   '',
   "caption": '',
   "type":    '',
   "options": {
     "theme":   '',
-	"legend":  '',
+    "legend":  '',
     "labels":  '',
     "numbers": ''
   },
   "data": [
     {
-	  "label": '',
-	  "value": '',
-	  "colour": ''
+      "label": '',
+      "value": '',
+      "colour": ''
     }
   ]
 }
+// close the code block
+// can't show it here
 ```
 
 ## Types of charts
