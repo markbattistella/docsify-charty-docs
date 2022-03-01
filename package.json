@@ -24,10 +24,5 @@
 	"scripts": {
 		"launch": "docsify serve . -o",
 		"update": "ncu -u && npm update && npm install"
-	},
-
-	"dependencies": {
-		"docsify": "^4.12.1",
-		"docsify-tabs": "^1.5.2"
 	}
 }
